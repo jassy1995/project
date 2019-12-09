@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>toggle</title>
+	
+
+
+</head>
+<body>
+	<div style="margin-left:400px">
+		<div id="display" style="color: yellow">
+	    <img src="image/bulbon.GIF" style="width: 100px; display:none;" id="dp1">
+	    <img src="image/bulboff.GIF" style="width: 100px;" id="dp2">
+	    </div>
+        <div>	
+	    <input type="button" value="on" name="" id="ipt"  onclick="light1()">
+        </div>
+	</div>
+	
+
+
+</body>
+	<script type="text/javascript">
+		var on=true;
+	function light1(){
+		if (on) {
+	    ipt.value="off";
+	    on=false;
+	    document.getElementById('dp1').style.display="block";
+	    document.getElementById('dp2').style.display="none";
+		}
+		else{
+	    ipt.value="on";	
+	    on=true;
+	    document.getElementById('dp1').style.display="none";
+	    document.getElementById('dp2').style.display="block";
+		}
+    	
+
+}
+		
+	</script>
+</html>

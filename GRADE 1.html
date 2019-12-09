@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>student grade</title>
+	<link rel="stylesheet" type="text/css" href="GRADE 2.css">
+</head>
+<body>
+<input  type="numbber" id="fl"  placeholder="input score" name="">
+<button onclick="result()">SUMMIT</button>
+<div id="see" ></div>
+
+
+	
+
+
+
+	
+<script type="text/javascript">
+function  result() {
+
+	var a =fl.value;
+	if (a <=39 ){
+	 see.innerHTML="fail"	
+	}
+	else if (a<=49) {
+		see.innerHTML="fair"
+	}
+
+	else if ( a<=59) {
+		see.innerHTML="good"
+	}
+	else if ( a<=69) {
+		 see.innerHTML="very good"
+		}
+
+	else if ( a<=100) {
+		see.innerHTML="excellent"
+	}
+	else if  (a>100) { 
+	    see.innerHTML="out of range"
+	}
+}
+</script>
+</body>
+</html

@@ -1,0 +1,13 @@
+input {
+	border-bottom: 3px solid;
+	font-family: verander;
+	color: black;
+	background-color:#ffff99;
+	height: 30px;
+	border-right:3px solid;
+	font-size: 20px;
+}
+button {
+	background-color:#AFEEEE;
+	color: black;
+}

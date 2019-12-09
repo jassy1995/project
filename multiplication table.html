@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication Table</title>
+</head>
+<body>
+	<style type="text/css">
+ legend{
+		background-color:black;
+		color: yellow;
+	}
+	fieldset{
+		background-color: #e5dfa0;
+	}
+	button{
+		border-radius: 100%;
+		color: yellow;
+		background-color:black;
+		width: 100px;
+		height: 50px;
+
+	}
+	#yes{
+		background-color:black;
+		color: #fff;
+	}
+		
+	</style>
+	<center>
+		<fieldset>
+			<legend>Times table</legend>
+			
+			Rows:   <input type="number" id="row" name="" placeholder="row"><br><br><br>
+			Columns: <input type="number" id="col" name="" placeholder="column"><br><br>
+			<button onclick="display()">Display</button><br><br><br>
+		</fieldset>
+	</center>
+	<div id="yes"></div>
+<script type="text/javascript">
+	
+		 col.focus();
+		
+	
+		function display(){
+			if (col.value <=0 && row.value <=0  || col.value =="" && row.value ==""){
+				alert("invalid input")
+			}
+			else{
+				col.focus();
+				var y= "";
+				y+= "<table border= 1;>";	
+				for(i=1; i<=col.value; i++){
+					y += "<td style= 'min-width: 70px'>";
+					y+= "Table"+i;
+					y += "<table border= 1;>";
+					for(v=1;v<=row.value;v++)
+					{
+		
+						y +="<tr><td>"+i+"X"+v+"="+i*v+"</td></tr>";
+					}
+						y += "</table></td>";	
+    			}
+   						y += "</tr></table>";
+    					yes.innerHTML= y;
+    		}
+		
+		}
+			
+	</script>
+
+</body>
+</html>
